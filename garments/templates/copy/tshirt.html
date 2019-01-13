@@ -1,0 +1,43 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class='container' style="margin-top:50px">
+<h2 align="center" style="color:white ; background-color:black ;"> List of  T-shirts </h2>
+
+{% for l in lst %}
+<table width=100% border=0 class="table table-hover">
+<tbody>
+<tr>
+<td width=50%>
+<h2 style="text-align:center;"> Name:{{l.name}}</h2><br>
+<img src="{{l.photo.url}}" alt="shirt photo" width=200 height=300 class="center">
+
+</td><br>
+<td width=50%>
+<h2>Product detail:</h2><br/>
+<h3>Price:{{l.price}} <br>
+Counter:{{forloop.counter}} <br>
+Quantity:{{l.stock}} <br>
+Availibity : {% if l.availibility %} Yes
+              {% else %} No
+			  {% endif %}<br>
+created:{{l.created}}<br>
+updated:{{l.updated}}<br>
+description:<h5>{{l.desc}}<br></h5>
+<a href="cart{{l.id}}">Click to add to cart</a>
+</h3>
+
+</td>
+</tr>
+<hr>
+</tbody>
+</table>
+{% endfor %}
+<hr>
+</div>
+
+
+
+
+
+
+{% endblock %}

@@ -1,0 +1,359 @@
+{% extends 'index.html' %}
+{% block item %}
+<div style="text-align:center">
+     <span style="background-color:black;color:white;font-size:30px"> {{shariname}}</span>
+
+  </div>
+<div class="well" style="margin-left:25px;margin-right:25px">
+<div class="row">
+    {% for l in shari %}
+    <div class="col-md-3" >
+      <div class="thumbnail" style="height:375px;align:center">
+        <a href="{{l.photo2.url}}" target="_blank">
+          <img src="{{l.photo1.url}}" alt="Lights" style="height:250px">
+          <div class="caption">
+            <p>{{l.name}}</p>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+          <button type="button" class="btn btn-success" style="color:white"><a href="cart{{l.id}}" style="color:white">Add to cart</a></button>
+
+          </div>
+        </a>
+
+
+      </div>
+
+    </div>
+    {% endfor %}
+</div>
+</div>
+
+<div style="text-align:center">
+     <span style="background-color:black;color:white;font-size:30px"> {{casualshirtname}}</span>
+
+  </div>
+<div class="alert alert-success" style="margin-left:25px;margin-right:25px">
+<div class="row"  >
+    {% for l in casualshirt %}
+    <div class="col-md-3" >
+      <div class="thumbnail" style="height:350px">
+        <a href="{{l.photo2.url}}" target="_blank">
+          <img src="{{l.photo1.url}}" alt="Lights" style="height:250px">
+          <div class="caption">
+            <p>{{l.name}}</p>
+          </div>
+        </a>
+      </div>
+    </div>
+    {% endfor %}
+</div>
+</div>
+
+
+
+
+<div style="text-align:center">
+     <span style="background-color:black;color:white;font-size:30px"> {{sport_kidsname}}</span>
+
+  </div>
+<div class="alert alert-warning" style="margin-left:25px;margin-right:25px">
+<div class="row"  >
+    {% for l in sport_kids %}
+    <div class="col-md-3" >
+      <div class="thumbnail" style="height:350px">
+        <a href="{{l.photo2.url}}" target="_blank">
+          <img src="{{l.photo1.url}}" alt="Lights" style="height:250px">
+          <div class="caption">
+            <p>{{l.name}}</p>
+          </div>
+        </a>
+      </div>
+    </div>
+    {% endfor %}
+</div>
+</div>
+
+
+
+<div style="text-align:center">
+     <span style="background-color:black;color:white;font-size:30px"> {{servaniname}}</span>
+
+  </div>
+<div class="well" style="margin-left:25px;margin-right:25px">
+<div class="row"  >
+    {% for l in servani %}
+    <div class="col-md-3" >
+      <div class="thumbnail" style="height:350px">
+        <a href="{{l.photo2.url}}" target="_blank">
+          <img src="{{l.photo1.url}}" alt="Lights" style="height:250px">
+          <div class="caption">
+            <p>{{l.name}}</p>
+          </div>
+        </a>
+      </div>
+    </div>
+    {% endfor %}
+</div>
+</div>
+
+
+<div style="text-align:center">
+     <span style="background-color:black;color:white;font-size:30px"> {{tshirtname}}</span>
+
+  </div>
+<div class="alert alert-info" style="margin-left:25px;margin-right:25px">
+<div class="row"  >
+    {% for l in tshirt %}
+    <div class="col-md-3" >
+      <div class="thumbnail" style="height:350px">
+        <a href="{{l.photo2.url}}" target="_blank">
+          <img src="{{l.photo1.url}}" alt="Lights" style="height:250px">
+          <div class="caption">
+            <p>{{l.name}}</p>
+          </div>
+        </a>
+      </div>
+    </div>
+    {% endfor %}
+</div>
+</div>
+
+
+<div style="text-align:center">
+     <span style="background-color:black;color:white;font-size:30px"> {{westerwearname}}</span>
+
+  </div>
+<div class="alert alert-danger" style="margin-left:25px;margin-right:25px">
+<div class="row"  >
+    {% for l in westerwear %}
+    <div class="col-md-3" >
+      <div class="thumbnail" style="height:350px">
+        <a href="{{l.photo2.url}}" target="_blank">
+          <img src="{{l.photo1.url}}" alt="Lights" style="height:250px">
+          <div class="caption">
+            <p>{{l.name}}</p>
+          </div>
+        </a>
+      </div>
+    </div>
+    {% endfor %}
+</div>
+</div>
+
+
+<div style="text-align:center">
+     <span style="background-color:black;color:white;font-size:30px"> {{jacketsname}}</span>
+
+  </div>
+<div class="alert alert-info" style="margin-left:25px;margin-right:25px">
+<div class="row"  >
+    {% for l in jackets %}
+    <div class="col-md-3" >
+      <div class="thumbnail" style="height:350px">
+        <a href="{{l.photo2.url}}" target="_blank">
+          <img src="{{l.photo1.url}}" alt="Lights" style="height:250px">
+          <div class="caption">
+            <p>{{l.name}}</p>
+          </div>
+        </a>
+      </div>
+    </div>
+    {% endfor %}
+</div>
+</div>
+
+<div style="text-align:center">
+     <span style="background-color:black;color:white;font-size:30px"> {{tshirt_kidsname}}</span>
+
+  </div>
+<div class="alert alert-warning" style="margin-left:25px;margin-right:25px">
+<div class="row"  >
+    {% for l in tshirt_kids %}
+    <div class="col-md-3" >
+      <div class="thumbnail" style="height:350px">
+        <a href="{{l.photo2.url}}" target="_blank">
+          <img src="{{l.photo1.url}}" alt="Lights" style="height:250px">
+          <div class="caption">
+            <p>{{l.name}}</p>
+          </div>
+        </a>
+      </div>
+    </div>
+    {% endfor %}
+</div>
+</div>
+
+<div style="text-align:center">
+     <span style="background-color:black;color:white;font-size:30px"> {{jeansname}}</span>
+
+  </div>
+<div class="well" style="margin-left:25px;margin-right:25px">
+<div class="row"  >
+    {% for l in jeans %}
+    <div class="col-md-3" >
+      <div class="thumbnail" style="height:350px">
+        <a href="{{l.photo2.url}}" target="_blank">
+          <img src="{{l.photo1.url}}" alt="Lights" style="height:250px">
+          <div class="caption">
+            <p>{{l.name}}</p>
+          </div>
+        </a>
+      </div>
+    </div>
+    {% endfor %}
+</div>
+</div>
+
+
+<div style="text-align:center">
+     <span style="background-color:black;color:white;font-size:30px"> {{sport_wearname}}</span></div>
+<div class="alert alert-warning" style="margin-left:25px;margin-right:25px">
+<div class="row"  >
+    {% for l in sport_wear %}
+    <div class="col-md-3" >
+      <div class="thumbnail" style="height:350px">
+        <a href="{{l.photo2.url}}" target="_blank">
+          <img src="{{l.photo1.url}}" alt="Lights" style="height:250px">
+          <div class="caption">
+            <p>{{l.name}}</p>
+          </div>
+        </a>
+      </div>
+    </div>
+    {% endfor %}
+</div>
+</div>
+
+<div style="text-align:center">
+     <span style="background-color:black;color:white;font-size:30px"> {{jeans_kidsname}}</span></div>
+<div class="alert alert-danger" style="margin-left:25px;margin-right:25px">
+<div class="row"  >
+    {% for l in jeans_kids %}
+    <div class="col-md-3" >
+      <div class="thumbnail" style="height:350px">
+        <a href="{{l.photo2.url}}" target="_blank">
+          <img src="{{l.photo1.url}}" alt="Lights" style="height:250px">
+          <div class="caption">
+            <p>{{l.name}}</p>
+          </div>
+        </a>
+      </div>
+    </div>
+    {% endfor %}
+</div>
+</div>
+
+<div style="text-align:center">
+     <span style="background-color:black;color:white;font-size:30px"> {{lehgas_choliname}}</span></div>
+<div class="alert alert-info" style="margin-left:25px;margin-right:25px">
+<div class="row"  >
+    {% for l in lehgas_choli %}
+    <div class="col-md-3" >
+      <div class="thumbnail" style="height:350px">
+        <a href="{{l.photo2.url}}" target="_blank">
+          <img src="{{l.photo1.url}}" alt="Lights" style="height:250px">
+          <div class="caption">
+            <p>{{l.name}}</p>
+          </div>
+        </a>
+      </div>
+    </div>
+    {% endfor %}
+</div>
+</div>
+
+<div style="text-align:center">
+     <span style="background-color:black;color:white;font-size:30px"> {{sweater_menname}}</span></div>
+<div class="alert alert-success" style="margin-left:25px;margin-right:25px">
+<div class="row"  >
+    {% for l in sweater_men %}
+    <div class="col-md-3" >
+      <div class="thumbnail" style="height:350px">
+        <a href="{{l.photo2.url}}" target="_blank">
+          <img src="{{l.photo1.url}}" alt="Lights" style="height:250px">
+          <div class="caption">
+            <p>{{l.name}}</p>
+          </div>
+        </a>
+      </div>
+    </div>
+    {% endfor %}
+</div>
+</div>
+
+<div style="text-align:center">
+     <span style="background-color:black;color:white;font-size:30px"> {{shirt_kidsname}}</span></div>
+<div class="alert alert-info" style="margin-left:25px;margin-right:25px">
+<div class="row"  >
+    {% for l in shirt_kids %}
+    <div class="col-md-3" >
+      <div class="thumbnail" style="height:350px">
+        <a href="{{l.photo2.url}}" target="_blank">
+          <img src="{{l.photo1.url}}" alt="Lights" style="height:250px">
+          <div class="caption">
+            <p>{{l.name}}</p>
+          </div>
+        </a>
+      </div>
+    </div>
+    {% endfor %}
+</div>
+</div>
+
+<div style="text-align:center">
+     <span style="background-color:black;color:white;font-size:30px"> {{casual_pantname}}</span></div>
+<div class="alert alert-Danger" style="margin-left:25px;margin-right:25px">
+<div class="row"  >
+    {% for l in casual_pant %}
+    <div class="col-md-3" >
+      <div class="thumbnail" style="height:350px">
+        <a href="{{l.photo2.url}}" target="_blank">
+          <img src="{{l.photo1.url}}" alt="Lights" style="height:250px">
+          <div class="caption">
+            <p>{{l.name}}</p>
+          </div>
+        </a>
+      </div>
+    </div>
+    {% endfor %}
+</div>
+</div>
+
+<div style="text-align:center">
+     <span style="background-color:black;color:white;font-size:30px"> {{kurtasname}}</span></div>
+<div class="alert alert-warning" style="margin-left:25px;margin-right:25px">
+<div class="row"  >
+    {% for l in kurtas %}
+    <div class="col-md-4" >
+      <div class="thumbnail" style="height:350px">
+        <a href="{{l.photo2.url}}" target="_blank">
+          <img src="{{l.photo1.url}}" alt="Lights" style="height:250px">
+          <div class="caption">
+            <p>{{l.name}}</p>
+          </div>
+        </a>
+      </div>
+    </div>
+    {% endfor %}
+</div>
+</div>
+
+<div style="text-align:center">
+     <span style="background-color:black;color:white;font-size:30px"> {{formal_pantname}}</span></div>
+<div class="well" style="margin-left:25px;margin-right:25px">
+<div class="row"  >
+    {% for l in formal_pant %}
+    <div class="col-md-2" >
+      <div class="thumbnail" style="height:350px">
+        <a href="{{l.photo2.url}}" target="_blank">
+          <img src="{{l.photo1.url}}" alt="Lights" style="height:250px">
+          <div class="caption">
+            <p>{{l.name}}</p>
+          </div>
+        </a>
+      </div>
+    </div>
+    {% endfor %}
+</div>
+</div>
+
+{% endblock %}
